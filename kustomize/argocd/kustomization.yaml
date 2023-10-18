@@ -1,0 +1,10 @@
+namespace: argocd
+
+resources:
+- demo-apps-dev.yaml
+- demo-apps-dev-ocp.yaml
+- demo-apps-test.yaml
+- demo-apps-prod.yaml
+- demo-apps-monitoring.yaml
+- postgres-operator-gke.yaml
+- postgres-operator-ocp.yaml

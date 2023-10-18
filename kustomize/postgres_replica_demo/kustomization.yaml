@@ -1,0 +1,4 @@
+namespace: demo-rep
+
+resources:
+- postgres.yaml
