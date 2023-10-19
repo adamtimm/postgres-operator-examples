@@ -1,6 +1,6 @@
 #!/bin/bash
 
-oc project argocd
+kubens argocd
 
 kubectl patch app monitoring  -p '{"metadata": {"finalizers": null}}' --type merge
 echo "monitoring patched"

@@ -4,3 +4,4 @@ resources:
 - demo-test.yaml
 - demo-prod.yaml
 - sample.yaml
+- argocd.yaml
