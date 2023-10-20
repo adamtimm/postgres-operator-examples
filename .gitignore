@@ -1,2 +1,5 @@
 regcred_template.sh
 setup.sh
+setup-test.sh
+reset.sh
+argocd_login.sh

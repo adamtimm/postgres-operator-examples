@@ -1,6 +1,6 @@
 resources:
 - operator.yaml
-- demo.yaml
+- demo-dev.yaml
 - demo-test.yaml
 - demo-prod.yaml
 - sample.yaml
