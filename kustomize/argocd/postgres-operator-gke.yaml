@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/adamtimm/postgres-operator-examples
-    targetRevision: HEAD
+    targetRevision: multi-clud_ha_demo
     path: kustomize/install/default
   destination:
     server: https://kubernetes.default.svc
