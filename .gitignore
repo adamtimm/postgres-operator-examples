@@ -3,3 +3,6 @@ setup.sh
 setup-test.sh
 reset.sh
 argocd_login.sh
+remote_login.sh
+test.sh
+rke2.yaml
