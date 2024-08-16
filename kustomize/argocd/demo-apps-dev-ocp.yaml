@@ -13,7 +13,7 @@ spec:
     targetRevision: multi-clud_ha_demo
     path: kustomize/postgres
   destination:
-    server: https://api.dod-demos.ocp4-pbierly.crunchydata.com:6443
+    server: https://api.salab-pbierly-stig-webinar.ocp4-pbierly.crunchydata.com:6443
     namespace: demo
   syncPolicy:
     syncOptions:
