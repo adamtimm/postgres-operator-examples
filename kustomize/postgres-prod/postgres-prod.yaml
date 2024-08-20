@@ -3,9 +3,9 @@ kind: PostgresCluster
 metadata:
   name: hippo-prod
 spec:
-  image: registry.crunchydata.com/crunchydata/crunchy-postgres:ubi8-14.7-0
-  # image: registry.crunchydata.com/crunchydata/crunchy-postgres:ubi8-14.8-0
-  postgresVersion: 14
+  image: registry.crunchydata.com/crunchydata/crunchy-postgres:ubi8-16.3-1
+  # image: registry.crunchydata.com/crunchydata/crunchy-postgres:ubi8-16.4-0
+  postgresVersion: 16
   instances:
     - name: instance1
       replicas: 3
@@ -17,7 +17,7 @@ spec:
             storage: 10Gi
   backups:
     pgbackrest:
-      image: registry.crunchydata.com/crunchydata/crunchy-pgbackrest:ubi8-2.41-4
+      image: registry.crunchydata.com/crunchydata/crunchy-pgbackrest:ubi8-5.6.0-0
       repos:
       - name: repo1
         schedules:
@@ -32,11 +32,11 @@ spec:
                 storage: 10Gi
   proxy:
     pgBouncer:
-      image: registry.crunchydata.com/crunchydata/crunchy-pgbouncer:ubi8-1.18-0
+      image: registry.crunchydata.com/crunchydata/crunchy-pgbouncer:ubi8-5.6.0-0
   monitoring:
     pgmonitor:
       exporter:
-        image: registry.crunchydata.com/crunchydata/crunchy-postgres-exporter:ubi8-5.3.1-0
+        image: registry.crunchydata.com/crunchydata/crunchy-postgres-exporter:ubi8-5.6.0-0
   imagePullSecrets:
    - name: timmregcred 
 
