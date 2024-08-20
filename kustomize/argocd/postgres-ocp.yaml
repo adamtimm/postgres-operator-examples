@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: demo-dev-ocp
+  name: postgres-operator-ocp
   namespace: argocd
   # Finalizer that ensures that project is not deleted until it is not referenced by any application
   finalizers:
@@ -11,10 +11,12 @@ spec:
   source:
     repoURL: https://github.com/adamtimm/postgres-operator-examples
     targetRevision: multi-clud_ha_demo
-    path: kustomize/postgres
+    path: kustomize/install/default
   destination:
     server: api.salab-pbierly-stig-webinar.ocp4-pbierly.crunchydata.com:6443
-    namespace: demo
+    namespace: postgres-operator
   syncPolicy:
     syncOptions:
+      - ServerSideApply=true
       - CreateNamespace=true
+  
