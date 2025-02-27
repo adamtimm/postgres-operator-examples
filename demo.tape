@@ -5,6 +5,7 @@ Output demo.gif
 Set Width 200  # Bigger for visibility
 Set Height 200
 Set Theme Molokai
+Set TypingSpeed 50ms #Slower typing
 
 # Intro
 Type "echo 'Installing Crunchy Postgres Operator on K0s!'"
