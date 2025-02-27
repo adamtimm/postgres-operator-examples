@@ -2,8 +2,8 @@
 Output demo.gif
 
 # Set terminal size and theme
-Set Width 200  # Bigger for visibility
-Set Height 200
+Set Width 1000  # Bigger for visibility
+Set Height 1000
 Set Theme Molokai
 Set TypingSpeed 50ms #Slower typing
 
