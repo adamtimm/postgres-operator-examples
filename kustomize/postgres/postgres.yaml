@@ -16,6 +16,7 @@ spec:
         resources:
           requests:
             storage: 1Gi
+        storageClassName: local-storage    
   backups:
     pgbackrest:
       repos:
@@ -27,3 +28,4 @@ spec:
             resources:
               requests:
                 storage: 1Gi
+            storageClassName: local-storage    
