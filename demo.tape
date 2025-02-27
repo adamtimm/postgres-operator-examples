@@ -4,7 +4,7 @@ Output demo.gif
 # Set terminal size and theme
 Set Width 120
 Set Height 120
-Set Theme solarized-dark  # No quotes, just the name
+Set Theme monokai  # Switched to a basic, safe theme
 
 # Intro
 Type "echo 'Installing Crunchy Postgres Operator on K0s!'"
@@ -42,6 +42,4 @@ Enter
 Sleep 2s
 
 # Outro
-Type "echo 'Postgres cluster ready for demos!'"
-Sleep 1s
-Enter
+Type "echo 'Postgres cluster...
