@@ -2,46 +2,47 @@
 Output demo.gif
 
 # Set terminal size and theme
-Set Width 140  # Bumped up
-Set Height 140  # Bumped up
+Set Width 200  # Bigger for visibility
+Set Height 200
 Set Theme Molokai
 
 # Intro
 Type "echo 'Installing Crunchy Postgres Operator on K0s!'"
-Sleep 1s
+Sleep 2s  # Slower pace
 Enter
 
 # Start in the right directory
 Type "cd /Users/adamtimm/Documents/demos/demo/vhs_demos/postgres-operator-examples"
-Sleep 500ms
-Enter
 Sleep 1s
+Enter
+Sleep 2s
 
 # Install operator with --server-side
 Type "kubectl apply --server-side -k kustomize/install/default"
-Sleep 500ms
+Sleep 1s
 Enter
-Sleep 3s
+Sleep 5s  # Give time to see output
 
 # Show operator pod
 Type "kubectl -n postgres-operator get pods"
-Sleep 500ms
-Enter
-Sleep 2s
-
-# Create cluster (assumes local-storage is set)
-Type "kubectl apply -k kustomize/postgres"
-Sleep 500ms
+Sleep 1s
 Enter
 Sleep 3s
 
+# Create cluster (assumes local-storage is set)
+Type "kubectl apply -k kustomize/postgres"
+Sleep 1s
+Enter
+Sleep 5s
+
 # Show cluster pods
 Type "kubectl -n postgres-operator get pods"
-Sleep 500ms
+Sleep 1s
 Enter
-Sleep 2s
+Sleep 3s
 
 # Outro
 Type "echo 'Postgres cluster ready for demos!'"
-Sleep 1s
+Sleep 2s
 Enter
+Sleep 2s  # Let it hang for effect
