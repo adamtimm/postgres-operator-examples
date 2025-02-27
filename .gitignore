@@ -1,0 +1,7 @@
+#igoner demo files
+demo.gif
+demo.tape
+
+#ignore local storage configuration
+local-pvs.yaml
+local-storage.yaml
