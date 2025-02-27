@@ -8,7 +8,7 @@ Set Theme Molokai
 Set TypingSpeed 50ms #Slower typing
 
 # Intro
-Type "Installing Crunchy Postgres Operator on K0s!"
+Type "echo 'Installing Crunchy Postgres Operator on K0s!'"
 Sleep 10s  # Slower pace
 Enter
 
@@ -37,7 +37,7 @@ Enter
 Sleep 10s
 
 # Outro
-Type "Postgres cluster ready for demos!"
+Type "echo 'Postgres cluster ready for demos!'"
 Sleep 5s
 Enter
 Sleep 10s  # Let it hang for effect
