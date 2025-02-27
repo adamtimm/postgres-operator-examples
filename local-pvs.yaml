@@ -1,14 +1,27 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: pv-hippo-repo
+  name: pv-hippo-instance
 spec:
   capacity:
-storage: 1Gi
+    storage: 1Gi
   accessModes:
-- ReadWriteOnce
+    - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
   storageClassName: local-storage
   hostPath:
-path: /mnt/data/hippo-repo  # Make this dir on your VM
-
+    path: /mnt/data/hippo-instance
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-hippo-repo
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: local-storage
+  hostPath:
+    path: /mnt/data/hippo-repo
