@@ -3,8 +3,8 @@ Output demo.gif
 
 # Set terminal size and theme
 Set Width 120
-Set Height 40
-Set Theme "Solarized Dark"
+Set Height 120  # Upped from 40 to meet minimum
+Set Theme "solarized-dark"  # Fixed hyphen
 
 # Intro
 Type "echo 'Installing Crunchy Postgres Operator on K0s!'"
