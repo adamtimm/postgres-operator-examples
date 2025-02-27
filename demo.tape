@@ -2,7 +2,8 @@
 Output demo.gif
 
 # Set terminal size and theme
-Set Size 120x40
+Set Width 120
+Set Height 40
 Set Theme "Solarized Dark"
 
 # Intro
