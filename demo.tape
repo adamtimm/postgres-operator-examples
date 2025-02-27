@@ -4,7 +4,7 @@ Output demo.gif
 # Set terminal size and theme
 Set Width 120
 Set Height 120
-Set Theme monokai  # Switched to a basic, safe theme
+Set Theme Molokai  # Switched to a basic, safe theme
 
 # Intro
 Type "echo 'Installing Crunchy Postgres Operator on K0s!'"
