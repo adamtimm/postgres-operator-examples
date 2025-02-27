@@ -1,0 +1,11 @@
+
+    storage: 1Gi  # Small for demo, adjust if needed
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: local-storage
+  hostPath:
+    path: /mnt/data/hippo-instance  # Make this dir on your VM
+
+
+
