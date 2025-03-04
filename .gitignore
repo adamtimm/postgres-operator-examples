@@ -5,3 +5,6 @@ demo.tape
 #ignore local storage configuration
 local-pvs.yaml
 local-storage.yaml
+
+#ignore reseet script
+release-pvs.sh
