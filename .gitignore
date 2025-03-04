@@ -5,6 +5,19 @@ demo.tape
 #ignore local storage configuration
 local-pvs.yaml
 local-storage.yaml
+extra-pv.yaml
 
-#ignore reseet script
+
+
+#ignore demo scripts
+0-reset.sh
+1-install-pgo.sh
+2a-single-node.sh
+2b-add-replica-pgbouncer.sh
+2c-failover-demo.sh
+2d-scale-back-up.sh
 release-pvs.sh
+
+#kubectl commands
+#watch -n 2 kubectl -n postgres-operator get pods -o custom-columns="NAME:.metadata.name,ROLE:.metadata.labels.postgres-operator\.crunchydata\.com/role,STATUS:.status.phase" --sort-by=.metadata.creationTimestamp
+
